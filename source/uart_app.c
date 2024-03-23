@@ -44,6 +44,10 @@ uint8_t uartSendDMA(void *handle, const uint8_t *bufferPtr, uint8_t size)
 			ret = 1;
 		}
 	}
+	else
+	{
+		ret = 1;
+	}
 
 	//	//!UART'ın Transfer Complete Flag'ı kontrol edilir eğer iletim tamamlanmış ise yeni mesaj gönderilir.
 	//	if((huart->Instance->SR) & (1<<6))
